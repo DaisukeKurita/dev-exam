@@ -25,5 +25,22 @@
   <%= @property.remarks %>
 </p>
 
-<%= link_to 'Edit', edit_property_path(@property) %> |
+<% @stations.each do |station| %>
+  <% if @property.stations.any? %>
+    <p>
+      <strong>route_name:</strong>
+      <%= station.route_name %>
+    </p>
+    <p>
+      <strong>station_name</strong>
+      <%= station.station_name %>
+    </p>
+    <p>
+      <strong>minutes_foot</strong>
+      <%= station.minutes_foot %>
+    </p>
+  <% end %>
+<% end %>
+
 <%= link_to 'Back', properties_path %>
+<%= link_to 'Edit', edit_property_path(@property) %> |
