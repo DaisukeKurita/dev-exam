@@ -1,15 +1,15 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Properties</h1>
+<h1><%= t '.title' %></h1>
 
 <table>
   <thead>
     <tr>
-      <th>Property name</th>
-      <th>Rent</th>
-      <th>Address</th>
-      <th>Age building</th>
-      <th>Remarks</th>
+      <th><%= t '.property_name' %></th>
+      <th><%= t '.rent' %></th>
+      <th><%= t '.address' %></th>
+      <th><%= t '.age_building' %></th>
+      <th><%= t '.remarks' %></th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -22,9 +22,9 @@
         <td><%= property.address %></td>
         <td><%= property.age_building %></td>
         <td><%= property.remarks %></td>
-        <td><%= link_to 'Show', property %></td>
-        <td><%= link_to 'Edit', edit_property_path(property) %></td>
-        <td><%= link_to 'Destroy', property, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to t('.show'), property %></td>
+        <td><%= link_to t('.edit'), edit_property_path(property) %></td>
+        <td><%= link_to t('.destroy'), property, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -32,4 +32,4 @@
 
 <br>
 
-<%= link_to 'New Property', new_property_path %>
+<%= link_to t('.new_property'), new_property_path %>

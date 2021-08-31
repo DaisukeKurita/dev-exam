@@ -7,4 +7,14 @@ ja:
       title: '物件編集'
       show: '詳細'
       back: '戻る'
-    show:
+    index:
+      title: '物件一覧'
+      property_name: '物件名'
+      rent: '賃料'
+      address: '住所'
+      age_building: '築年数'
+      remarks: '備考'
+      show: '詳細'
+      edit: '編集'
+      destroy: '削除'
+      new_property: '物件を登録する'
