@@ -7,7 +7,7 @@
 
 <p>
   <strong><%= t '.rent' %></strong>
-  <%= @property.rent %>
+  <%= @property.rent %><%= t '.yen'%>
 </p>
 
 <p>
@@ -17,7 +17,7 @@
 
 <p>
   <strong><%= t '.age_building' %></strong>
-  <%= @property.age_building %>
+  <%= @property.age_building %><%= t '.year'%>
 </p>
 
 <p>
@@ -37,7 +37,7 @@
     </p>
     <p>
       <strong><%= t '.minutes_foot' %></strong>
-      <%= station.minutes_foot %>
+      <%= station.minutes_foot %><%= t '.minutes'%>
     </p>
   <% end %>
 <% end %>

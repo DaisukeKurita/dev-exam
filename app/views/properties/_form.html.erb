@@ -18,7 +18,7 @@
 
   <div class="field">
     <%= form.label :rent %>
-    <%= form.number_field :rent %>
+    <%= form.number_field :rent %><%= t '.yen'%>
   </div>
 
   <div class="field">
@@ -28,7 +28,7 @@
 
   <div class="field">
     <%= form.label :age_building %>
-    <%= form.number_field :age_building %>
+    <%= form.number_field :age_building %><%= t '.year'%>
   </div>
 
   <div class="field">
@@ -47,7 +47,7 @@
     </div>
     <div class="field">
       <%= station.label :minutes_foot %>
-      <%= station.number_field :minutes_foot %>
+      <%= station.number_field :minutes_foot %><%= t '.minutes'%>
     </div>
   <% end %>
   <div class="actions">
