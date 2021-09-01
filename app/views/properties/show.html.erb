@@ -25,7 +25,9 @@
   <%= @property.remarks %>
 </p>
 
+<% num = 0 %>
 <% @stations.each do |station| %>
+<%= t '.title'%><%= num += 1 %>
   <% if @property.stations.any? %>
     <p>
       <strong><%= t '.route_name' %></strong>

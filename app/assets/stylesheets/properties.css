@@ -1,6 +1,9 @@
 html {
   min-height: 100%
 }
+body {
+  margin: 50px;
+}
 .property_index {
   width: auto;
 }
