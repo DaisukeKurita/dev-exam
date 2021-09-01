@@ -36,7 +36,9 @@
     <%= form.text_area :remarks %>
   </div>
 
+  <% num = 0 %>
   <%= form.fields_for :stations do |station| %>
+  <%= t '.title'%><%= num += 1 %>
     <div class="field">
       <%= station.label :route_name %>
       <%= station.text_field :route_name %>
