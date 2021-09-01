@@ -1,0 +1,46 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong><%= t '.property_name' %></strong>
+  <%= @property.property_name %>
+</p>
+
+<p>
+  <strong><%= t '.rent' %></strong>
+  <%= @property.rent %><%= t '.yen'%>
+</p>
+
+<p>
+  <strong><%= t '.address' %></strong>
+  <%= @property.address %>
+</p>
+
+<p>
+  <strong><%= t '.age_building' %></strong>
+  <%= @property.age_building %><%= t '.year'%>
+</p>
+
+<p>
+  <strong><%= t '.remarks' %></strong>
+  <%= @property.remarks %>
+</p>
+
+<% @stations.each do |station| %>
+  <% if @property.stations.any? %>
+    <p>
+      <strong><%= t '.route_name' %></strong>
+      <%= station.route_name %>
+    </p>
+    <p>
+      <strong><%= t '.station_name' %></strong>
+      <%= station.station_name %>
+    </p>
+    <p>
+      <strong><%= t '.minutes_foot' %></strong>
+      <%= station.minutes_foot %><%= t '.minutes'%>
+    </p>
+  <% end %>
+<% end %>
+
+<%= link_to t('.back'), properties_path %>
+<%= link_to t('.edit'), edit_property_path(@property) %> |
