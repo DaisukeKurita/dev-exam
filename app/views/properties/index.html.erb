@@ -2,14 +2,14 @@
 
 <h1><%= t '.title' %></h1>
 
-<table>
+<table class="property_index">
   <thead>
     <tr>
-      <th><%= t '.property_name' %></th>
-      <th><%= t '.rent' %></th>
-      <th><%= t '.address' %></th>
-      <th><%= t '.age_building' %></th>
-      <th><%= t '.remarks' %></th>
+      <th class="property_name"><%= t '.property_name' %></th>
+      <th class="rent"><%= t '.rent' %></th>
+      <th class="address"><%= t '.address' %></th>
+      <th class="age_building"><%= t '.age_building' %></th>
+      <th class="remarks"><%= t '.remarks' %></th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -22,9 +22,9 @@
         <td><%= property.address %></td>
         <td><%= property.age_building %><%= t '.year'%></td>
         <td><%= property.remarks %></td>
-        <td><%= link_to t('.show'), property %></td>
-        <td><%= link_to t('.edit'), edit_property_path(property) %></td>
-        <td><%= link_to t('.destroy'), property, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td class="link"><%= link_to t('.show'), property %></td>
+        <td class="link"><%= link_to t('.edit'), edit_property_path(property) %></td>
+        <td class="link"><%= link_to t('.destroy'), property, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

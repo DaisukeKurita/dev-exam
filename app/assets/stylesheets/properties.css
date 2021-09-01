@@ -1,0 +1,24 @@
+html {
+  min-height: 100%
+}
+.property_index {
+  width: auto;
+}
+.property_name {
+  width: 100px;
+}
+.rent {
+  width: 50px;
+}
+.address {
+  width: 100px;
+}
+.age_building {
+  width: 40px;
+}
+.remarks {
+  width: 1100px;
+}
+.link {
+  width: 10px;
+}
