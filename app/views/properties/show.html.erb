@@ -25,9 +25,11 @@
   <%= @property.remarks %>
 </p>
 
+<hr>
+
 <% num = 0 %>
 <% @stations.each do |station| %>
-<%= t '.title'%><%= num += 1 %>
+<h3><%= t '.title'%><%= num += 1 %></h3>
   <% if @property.stations.any? %>
     <p>
       <strong><%= t '.route_name' %></strong>
@@ -44,5 +46,5 @@
   <% end %>
 <% end %>
 
-<%= link_to t('.back'), properties_path %>
 <%= link_to t('.edit'), edit_property_path(@property) %> |
+<%= link_to t('.back'), properties_path %>

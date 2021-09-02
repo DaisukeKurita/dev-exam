@@ -25,3 +25,10 @@ body {
 .link {
   width: 10px;
 }
+hr {
+  width: auto;
+}
+.field {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
